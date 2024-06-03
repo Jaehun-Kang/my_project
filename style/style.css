@@ -1,0 +1,22 @@
+@import 'https://fonts.cdnfonts.com/css/eurostile';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Eurostile, sans-serif;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.map {
+  max-width: 80rem;
+  aspect-ratio: 1/1;
+}
+.map_ratio {
+  width: 1280px;
+  aspect-ratio: 128/128;
+}
