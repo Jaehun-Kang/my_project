@@ -14,14 +14,38 @@ body {
   font-family: Eurostile, sans-serif;
   font-size: 1.125rem;
   line-height: 150%;
+  color: oklch(85.95% 0.288 142.72deg);
+  background-color: #000;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  margin-inline: 24px;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
 }
 
 .map {
-  max-width: 80rem;
-  aspect-ratio: 1 / 1;
+  &--title {
+    padding-block: 24px;
+    margin-inline: auto;
+  }
 
   &_ratio {
-    width: 1280px;
+    position: relative;
+    z-index: -1;
+    max-width: 1000px;
     aspect-ratio: 128 / 128;
+    margin-inline: auto;
   }
 }
