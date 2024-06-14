@@ -9,13 +9,27 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: 0;
   font-family: Eurostile, sans-serif;
   font-size: 1.125rem;
+  letter-spacing: .0625rem;
   line-height: 150%;
-  color: oklch(85.95% 0.288 142.72deg);
+  color: oklch(85.95% 0.3 143);
   background-color: #000;
+  // background-color: oklch(25% 0.07 280);
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.875rem;
+  max-width: 80rem;
+  margin-inline: auto;
 }
 
 img {
@@ -23,29 +37,77 @@ img {
 }
 
 .section {
-  margin-inline: 24px;
+  width: 100%;
 }
 
 .container {
   margin-inline: auto;
+  
+  &_map {
+    max-width: 81.25rem;
+    min-width: 15rem;
+    max-height: 37.5rem;
+    height: 100vh;
+    border-radius: .75rem;
+    top: 4.75rem;
+    // padding-inline: 10%;
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 .header {
   position: fixed;
+  max-height: 5rem;
   z-index: 1;
+  pointer-events: none;
+  
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+
+    &_title {
+      padding-block: 1.5rem;
+      margin-inline: auto;
+      background-color: #000;
+      // background-color: oklch(25% 0.07 280);
+      }
+
+    &_menu {
+      font-size: 1.125rem;
+      
+    }
+  }
+
+
+}
+
+
+
+.main {
+
 }
 
 .map {
-  &--title {
-    padding-block: 24px;
-    margin-inline: auto;
-  }
+  // width: 1300px;
+  margin-inline: auto;
+  // overflow: hidden;
+  z-index: -1;
+  // position: relative;
+  // pointer-events: none;
 
-  &_ratio {
-    position: relative;
-    z-index: -1;
-    max-width: 1000px;
+  &_content {
+    position: absolute;
+    width: 100%;
+    height: auto;
     aspect-ratio: 128 / 128;
-    margin-inline: auto;
+    // top: 4.75rem;
+    top: 0;
+    left: 0;
+    transform-origin: center center;
+    // margin-inline: auto;
+    // padding-top: 3.1875rem;
+    // overflow: hidden;
   }
 }

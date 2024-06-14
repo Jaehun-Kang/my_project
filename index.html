@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>SC1 Simcity - Fighting Spirit</title>
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
     <div class="section header">
       <div class="container">
-        <div class="map--title">Fighting Spirit</div>
+        <div class="nav">
+          <div class="nav_title">
+            <h1>Fighting Spirit</h1>
+          </div>
+           <div class="nav_menu">
+            <div class="nav_menu--btns"><div>menu1</div></div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="map">
+    <div class="section main">
+      <div class="container container_map">
+        <div id="map" class="map">
           <img
-            class="map_ratio"
-            src="./assets/starcraft buildings/fightingSpiritMap.webp"
+            class="map_content"
+            src="./assets/maps/fightingSpiritMapCan.webp"
             alt="Fighting Spirit map image"
           />
         </div>
       </div>
+    </div>
+    <div class="section">
+      <div class="container container_control-pannel"></div>
     </div>
   </body>
 </html>

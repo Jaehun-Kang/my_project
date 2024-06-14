@@ -9,9 +9,20 @@ body {
   margin: 0;
   font-family: Eurostile, sans-serif;
   font-size: 1.125rem;
+  letter-spacing: 0.0625rem;
   line-height: 150%;
-  color: oklch(85.95% 0.288 142.72deg);
+  color: oklch(85.95% 0.3 143);
   background-color: #000;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.875rem;
+  max-width: 80rem;
+  margin-inline: auto;
 }
 
 img {
@@ -19,26 +30,53 @@ img {
 }
 
 .section {
-  margin-inline: 24px;
+  width: 100%;
 }
 
 .container {
   margin-inline: auto;
 }
+.container_map {
+  max-width: 81.25rem;
+  min-width: 15rem;
+  max-height: 37.5rem;
+  height: 100vh;
+  border-radius: 0.75rem;
+  top: 4.75rem;
+  overflow: hidden;
+  position: relative;
+}
 
 .header {
   position: fixed;
+  max-height: 5rem;
   z-index: 1;
+  pointer-events: none;
+}
+.header .nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: center;
+}
+.header .nav_title {
+  padding-block: 1.5rem;
+  margin-inline: auto;
+  background-color: #000;
+}
+.header .nav_menu {
+  font-size: 1.125rem;
 }
 
-.map--title {
-  padding-block: 24px;
+.map {
   margin-inline: auto;
-}
-.map_ratio {
-  position: relative;
   z-index: -1;
-  max-width: 1000px;
-  aspect-ratio: 128/128;
-  margin-inline: auto;
 }
+.map_content {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 128/128;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+}/*# sourceMappingURL=style.css.map */
