@@ -9,8 +9,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   font-family: Eurostile, sans-serif;
@@ -26,31 +24,26 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-h1 {
-  font-size: 1.875rem;
-  max-width: 80rem;
-  margin-inline: auto;
-}
-
 img {
   display: block;
 }
 
 .section {
   width: 100%;
+  padding-inline: 1.5rem;
 }
 
 .container {
   margin-inline: auto;
   
   &_map {
+    // padding-inline: 1.5rem;
     max-width: 81.25rem;
     min-width: 15rem;
     max-height: 37.5rem;
     height: 100vh;
     border-radius: .75rem;
     top: 4.75rem;
-    // padding-inline: 10%;
     overflow: hidden;
     position: relative;
   }
@@ -59,43 +52,51 @@ img {
 .header {
   position: fixed;
   max-height: 5rem;
-  z-index: 1;
-  pointer-events: none;
-  
+
+  // pointer-events: none;
+
   .nav {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(3.5625rem, 1fr));
+    max-width: 81.25rem;
+    min-width: 25rem;
+    margin-inline: auto;
 
     &_title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      max-width: 80rem;
+      white-space: nowrap;
+
       padding-block: 1.5rem;
-      margin-inline: auto;
+      // margin-inline: auto;
       background-color: #000;
+
+      justify-self: left;
       // background-color: oklch(25% 0.07 280);
       }
 
     &_menu {
       font-size: 1.125rem;
-      
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr 1fr;
+
+      &--btns {
+        justify-self: right;
+        align-self: center;
+      }
     }
   }
-
-
 }
 
-
-
 .main {
-
+  top: 4.6875rem;
 }
 
 .map {
   // width: 1300px;
   margin-inline: auto;
-  // overflow: hidden;
-  z-index: -1;
-  // position: relative;
-  // pointer-events: none;
+  overflow: hidden;
 
   &_content {
     position: absolute;
@@ -109,5 +110,37 @@ img {
     // margin-inline: auto;
     // padding-top: 3.1875rem;
     // overflow: hidden;
+  }
+
+  &_grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 81.25rem;
+    aspect-ratio: 128 / 128;
+    display: grid;
+    grid-template-columns: repeat(128, minmax(.6348rem, 2.5391rem));
+    grid-template-rows: repeat(128, minmax(.6348rem, 2.5391rem));
+    // pointer-events: none;
+    
+    &-inside{
+      
+      &:hover {
+        background-color: oklch(38.48% 0.155 28.2); 
+        transition: background-color 300ms;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      background-size: calc(100% / 128) calc(100% / 128); 
+    }
   }
 }
