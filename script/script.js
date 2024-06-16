@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createGridInside() {
     for (let i = 0; i < 128 * 128 + 1; i++) {
       const gridInside = document.createElement("div");
-      gridInside.classList.add("map_grid-inside");
+      gridInside.classList.add("map_grid--inside");
       mapGrid.appendChild(gridInside);
       // console.log(`Grid element ${i} created`);
     }
@@ -103,12 +103,20 @@ document.addEventListener("DOMContentLoaded", () => {
       zoom.style.top = `${newTop}px`;
       mapGrid.style.left = `${newLeft}px`;
       mapGrid.style.top = `${newTop}px`;
+
+      mapGrid.querySelectorAll(".map_grid--inside").forEach(gridInside => {
+        gridInside.style.pointerEvents = "none";
+      });
     }
   }
 
   function dragEnd() {
     isDragging = false;
     zoom.style.cursor = "grab";
+
+    mapGrid.querySelectorAll(".map_grid--inside").forEach(gridInside => {
+      gridInside.style.pointerEvents = "auto";
+    });
   }
 
   function handleWheel(e) {
@@ -139,5 +147,30 @@ document.addEventListener("DOMContentLoaded", () => {
   zoom.style.cursor = "grab";
   zoom.addEventListener("load", updateGridSize);
   updateGridSize();
+
+  let buildings = document.querySelector('.underbar_buildings');
+  let buildingsRow = document.querySelectorAll('.underbar_buildings--row');
+  let race = document.querySelectorAll('.underbar_race > div');
+
+  console.log(buildings);
+  console.log(buildingsRow);
+
+  race.forEach((raceDiv, idx) => {
+    raceDiv.addEventListener('click', function (e) {
+      let nth = idx + 1;
+      buildings.dataset.opennth = nth;
+      switch (nth) {
+        case 1:
+          buildings.style.gridTemplateRows = '15.625rem 0 0';
+          break;
+        case 2:
+          buildings.style.gridTemplateRows = '0 15.625rem 0';
+          break;
+        case 3:
+          buildings.style.gridTemplateRows = '0 0 15.625rem';
+          break;
+      }
+    });
+  });
 });
 

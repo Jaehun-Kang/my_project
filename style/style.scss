@@ -17,10 +17,11 @@ body {
   line-height: 150%;
   color: oklch(85.95% 0.3 143);
   background-color: #000;
+  height: 100vh;
   // background-color: oklch(25% 0.07 280);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p{
   margin: 0;
 }
 
@@ -41,19 +42,24 @@ img {
     max-width: 81.25rem;
     min-width: 15rem;
     max-height: 37.5rem;
+    min-height: 37.5rem;
     height: 100vh;
     border-radius: .75rem;
-    top: 4.75rem;
+    // top: 4.75rem;
     overflow: hidden;
     position: relative;
+  }
+
+  &_control--pannel {
+    top: 5.3125rem;
+    // position: relative;
+    // padding-top: 1rem;
+    max-height: 100%;
   }
 }
 
 .header {
-  position: fixed;
   max-height: 5rem;
-
-  // pointer-events: none;
 
   .nav {
     display: grid;
@@ -79,7 +85,7 @@ img {
     &_menu {
       font-size: 1.125rem;
       display: grid;
-      grid-template-columns: 4fr 1fr 1fr 1fr;
+      grid-template-columns: 4fr min-content 0.2fr min-content 0.2fr min-content;
 
       &--btns {
         justify-self: right;
@@ -91,25 +97,25 @@ img {
 
 .main {
   top: 4.6875rem;
+  // position: relative;
 }
 
 .map {
-  // width: 1300px;
+  // width: 81.25rem;
   margin-inline: auto;
   overflow: hidden;
 
   &_content {
     position: absolute;
     width: 100%;
+    min-width: 37.5rem;
     height: auto;
+    min-height: 37.5rem;
     aspect-ratio: 128 / 128;
     // top: 4.75rem;
     top: 0;
     left: 0;
     transform-origin: center center;
-    // margin-inline: auto;
-    // padding-top: 3.1875rem;
-    // overflow: hidden;
   }
 
   &_grid {
@@ -121,13 +127,17 @@ img {
     display: grid;
     grid-template-columns: repeat(128, minmax(.6348rem, 2.5391rem));
     grid-template-rows: repeat(128, minmax(.6348rem, 2.5391rem));
+    z-index: 1;
     // pointer-events: none;
     
-    &-inside{
-      
+    &--inside{
+      z-index: inherit;
+      pointer-events: none;
+
       &:hover {
-        background-color: oklch(38.48% 0.155 28.2); 
-        transition: background-color 300ms;
+        background-color: oklch(38.48% 0.155 28.2);
+        transition: background-color 0ms;
+        pointer-events: auto;
       }
     }
 
@@ -143,4 +153,141 @@ img {
       background-size: calc(100% / 128) calc(100% / 128); 
     }
   }
+
+}
+
+.footer {
+  padding-block: 1.25rem;
+  height: calc(100vh - 42.1875rem);
+}
+
+.underbar {
+  // max-width: 81.25rem;
+  width: min-content;
+  height: 100%;
+  
+  display: grid;
+  margin-inline: auto;
+  grid-template-columns: min-content 1.25rem min-content;
+  
+
+  &_race {
+    display: grid;
+    grid-template-rows: 5rem 5rem 5rem;
+    height: 100%;
+    row-gap: .5rem;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    text-align: center;
+    align-items: center;
+
+    img {
+     width: 2.5rem;
+     height: 2.5rem;
+     object-fit: contain;
+     margin-inline: auto;
+   }
+
+    &--zerg {
+
+    }
+
+    &--protoss {
+      
+    }
+
+    &--terran {
+      
+    }
+  }
+
+  &_buildings {
+    height: 100%;
+    display: grid;
+
+    &[data-opennth='1'] {
+      grid-template-rows: 15.625rem 0 0;
+    }
+    
+    &[data-opennth='2'] {
+      grid-template-rows: 0 15.625rem 0;
+    }
+
+    &[data-opennth='3'] {
+      grid-template-rows: 0 0 15.625rem;
+    }
+
+    &--row {
+      &:nth-of-type(1) {
+        & * {
+          opacity: 0;
+          display: none;
+        }
+        @at-root .underbar_buildings[data-opennth = '1'] & * {
+          opacity: 1;
+          display: grid;
+        }
+      }
+      &:nth-of-type(2) {
+        & * {
+          opacity: 0;
+          display: none;
+        }
+        @at-root .underbar_buildings[data-opennth = '2'] & * {
+          opacity: 1;
+          display: grid;
+        }
+      }
+      &:nth-of-type(3) {
+        & * {
+          opacity: 0;
+          display: none;
+        }
+        @at-root .underbar_buildings[data-opennth = '3'] & * {
+          opacity: 1;
+          display: grid;
+        }
+      }
+    }
+
+    &--zerg, &--protoss, &--terran {
+      display: grid;
+      grid-template-columns: repeat(6, 5rem);
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: .3125rem;
+
+      & > * {
+        display: grid;
+        border-style: none;
+        border-width: .0625rem;
+        border-color: yellow;
+        padding-block: .1563rem;
+        padding-inline: .1563rem;
+      }
+
+      
+      img {
+        max-width: 4.6875rem;
+        max-height: 4.6875rem;
+        object-fit: contain;
+        margin-inline: auto;
+        align-self: center;
+        margin-block: auto;
+      }
+    }
+    
+    &--zerg {
+      
+    }
+
+    &--protoss {
+      
+    }
+
+    &--terran {
+      
+    }
+
+  }
+
 }
