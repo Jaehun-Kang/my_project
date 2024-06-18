@@ -12,26 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentScaleStep = 1;
 
   function createGridInside() {
-    // 먼저 그리드 요소들을 생성합니다.
     for (let i = 0; i < 128 * 128 + 1; i++) {
       const gridInside = document.createElement('div');
       gridInside.classList.add('map_grid--inside');
       mapGrid.appendChild(gridInside);
     }
-  
-    // red_pixel_indices.txt 파일을 fetch하여 처리합니다.
-    fetch('red_pixel_indices.txt')
+
+    fetch('redPixelIndices.txt')
       .then(response => response.text())
       .then(text => {
         const redGridIndices = text.trim().split('\n').map(num => parseInt(num.trim(), 10));
   
-        // mapGrid의 모든 .map_grid--inside 요소들을 찾습니다.
         const gridInsides = mapGrid.querySelectorAll('.map_grid--inside');
   
-        // redGridIndices 배열에 있는 각 인덱스에 대해 클래스를 변경합니다.
         redGridIndices.forEach(index => {
           if (gridInsides[index]) {
-            // 기존 클래스를 제거하고 새 클래스를 추가합니다.
             gridInsides[index].classList.remove('map_grid--inside');
             gridInsides[index].classList.add('map_grid--insideRed');
           }
@@ -41,8 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error fetching or processing file:', error);
       });
   }
-  
-  // createGridInside() 함수 호출하여 실행합니다.
   createGridInside();
 
   function updateGridSize() {
