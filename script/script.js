@@ -2267,7 +2267,7 @@ if (selection) {
 }
 
 
-  // 이거 주석 해제하면 여러개 그리드 hover 작동하긴 하는데 렉이 많이 걸리네요ㅋㅋ 그래서 그냥 패스하겠습니다
+  // 이거 주석 해제하면 여러개 그리드 hover 작동하긴 하는데 렉이 많이 걸리네요 그래서 그냥 패스하겠습니다
   //   const gridForce = document.querySelectorAll('.map_grid--force');
   // const buildingSelections = document.querySelectorAll('.underbar_buildings--selection');
   // gridForce.forEach((forcedGrid, index) => {

@@ -160,7 +160,7 @@ img {
   display: grid;
   grid-template-rows: 5rem 5rem 5rem;
   height: 100%;
-  width: 60px;
+  width: 3.75rem;
   row-gap: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.125rem;
@@ -176,13 +176,13 @@ img {
 }
 .underbar_race--selection {
   box-sizing: border-box;
-  padding: 1.5px;
+  padding: 0.0938rem;
 }
 .underbar_race--selection-selected {
-  border: 1.5px solid oklch(85.95% 0.3 143);
+  border: 0.0938rem solid oklch(85.95% 0.3 143);
   box-sizing: border-box;
   padding: 0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 .underbar_buildings {
   height: 100%;
@@ -246,11 +246,11 @@ img {
 }
 .underbar_buildings--selection {
   box-sizing: border-box;
-  padding: 1.5px;
+  padding: 0.0938rem;
 }
 .underbar_buildings--selection-selected {
-  border: 1.5px solid oklch(96.8% 0.21 110);
+  border: 0.0938rem solid oklch(96.8% 0.21 110);
   box-sizing: border-box;
   padding: 0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }/*# sourceMappingURL=style.css.map */
