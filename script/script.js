@@ -2202,7 +2202,7 @@ if (loadButton) {
           newImage.style.position = 'absolute';
           newImage.style.width = imageData.width;
           newImage.style.height = imageData.height;
-          newImage.style.zIndex = 999;
+          newImage.style.zIndex = 998;
           newImage.style.left = imageData.left;
           newImage.style.top = imageData.top;
 
