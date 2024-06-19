@@ -14,8 +14,6 @@ body {
   line-height: 150%;
   color: oklch(85.95% 0.3 143);
   background-color: #000;
-  height: 100vh;
-  overflow: hidden;
 }
 
 h1, h2, h3, h4, p {
