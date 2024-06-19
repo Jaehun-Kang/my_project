@@ -1872,7 +1872,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.4;
 
       const newImage = document.createElement('img');
-      newImage.src = '../assets/starcraftBuildings/terran/factoryMachineShop.webp';
+      newImage.src = 'my_project/assets/starcraftBuildings/terran/factoryMachineShop.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -2196,7 +2196,7 @@ const selection = document.querySelector('.underbar_buildings--zerg--hatchery', 
 if (selection) {
   selection.addEventListener('click', () => {
     buildingPlacing = !buildingPlacing;
-    console.log('Building placing:', buildingPlacing);
+    // console.log('건물 놓기:', buildingPlacing);
 
     if (buildingPlacing) {
       placingEnabled = true;
