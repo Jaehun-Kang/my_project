@@ -2227,7 +2227,7 @@ if (undoButton) {
       mapContainer.removeChild(lastImage);
       saveImgStack.pop();
     } else {
-      alert('뒤로가기 할 단계가 없습니다.');
+      alert('뒤로가기 할 단계가 없습니다');
     }
   });
   
