@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/hatchery.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/hatchery.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -337,8 +337,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+      const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -360,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.5;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/lair.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/lair.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -373,8 +374,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -396,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 4;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/hive.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/hive.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -409,8 +411,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -432,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/creepColony.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/creepColony.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -445,8 +448,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -468,7 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.1;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/sunkenColony.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/sunkenColony.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -481,8 +485,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -504,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/sporeColony.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/sporeColony.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -517,8 +522,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -540,7 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.5;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/extractor.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/extractor.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -553,8 +559,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -576,7 +583,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/spawningPool.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/spawningPool.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -589,8 +596,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -612,7 +620,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.7;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/evolutionChamber.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/evolutionChamber.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -625,8 +633,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -648,7 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/hydraliskDen.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/hydraliskDen.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -661,8 +670,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -684,7 +694,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/spire.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/spire.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -697,8 +707,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -720,7 +731,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/greaterSpire.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/greaterSpire.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -733,8 +744,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -756,7 +768,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.8;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/queensNest.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/queensNest.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -769,8 +781,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -792,7 +805,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.9;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/ultraliskCavern.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/ultraliskCavern.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -805,8 +818,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -828,7 +842,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.6;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/defilerMound.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/defilerMound.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -841,8 +855,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -864,7 +879,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/zerg/infestedCommandCenter.webp';
+      newImage.src = './assets/starcraftBuildings/zerg/infestedCommandCenter.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -877,8 +892,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -900,7 +916,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 4;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/nexus.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/nexus.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -913,8 +929,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -936,7 +953,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/pylon.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/pylon.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -949,8 +966,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -972,7 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/assimilator.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/assimilator.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -985,8 +1003,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1008,7 +1027,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/gateway.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/gateway.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1021,8 +1040,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1044,7 +1064,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.4;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/forge.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/forge.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1057,8 +1077,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1080,7 +1101,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/photonCanon.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/photonCanon.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1093,8 +1114,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1116,7 +1138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.7;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/cyberneticsCore.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/cyberneticsCore.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1129,8 +1151,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1152,7 +1175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/shieldBattery.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/shieldBattery.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1165,8 +1188,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1188,7 +1212,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.8;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/roboticsFacility.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/roboticsFacility.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1201,8 +1225,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1224,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.7;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/stargate.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/stargate.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1237,8 +1262,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1260,7 +1286,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.6;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/citadelOfAdun.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/citadelOfAdun.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1273,8 +1299,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1296,7 +1323,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.7;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/roboticsSupportBay.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/roboticsSupportBay.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1309,8 +1336,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1332,7 +1360,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/fleetBeacon.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/fleetBeacon.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1345,8 +1373,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1368,7 +1397,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.5;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/templarArchives.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/templarArchives.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1381,8 +1410,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1404,7 +1434,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.4;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/observatory.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/observatory.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1417,8 +1447,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1440,7 +1471,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/protoss/arbiterTribunal.webp';
+      newImage.src = './assets/starcraftBuildings/protoss/arbiterTribunal.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1453,8 +1484,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1476,7 +1508,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.05;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/commandCenter.webp';
+      newImage.src = './assets/starcraftBuildings/terran/commandCenter.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1489,8 +1521,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1512,7 +1545,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.05;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/commandCenterComsatStation.webp';
+      newImage.src = './assets/starcraftBuildings/terran/commandCenterComsatStation.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1525,8 +1558,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1548,7 +1582,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.05;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/commandCenterNuclearSilo.webp';
+      newImage.src = './assets/starcraftBuildings/terran/commandCenterNuclearSilo.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1561,8 +1595,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1584,7 +1619,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/supplyDepot.webp';
+      newImage.src = './assets/starcraftBuildings/terran/supplyDepot.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1597,8 +1632,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1620,7 +1656,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/refinery.webp';
+      newImage.src = './assets/starcraftBuildings/terran/refinery.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1633,8 +1669,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1656,7 +1693,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.5;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/barracks.webp';
+      newImage.src = './assets/starcraftBuildings/terran/barracks.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1669,8 +1706,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1692,7 +1730,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/engineeringBay.webp';
+      newImage.src = './assets/starcraftBuildings/terran/engineeringBay.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1705,8 +1743,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1728,7 +1767,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2.05;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/missileTurret.webp';
+      newImage.src = './assets/starcraftBuildings/terran/missileTurret.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1741,8 +1780,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1764,7 +1804,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/academy.webp';
+      newImage.src = './assets/starcraftBuildings/terran/academy.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1777,8 +1817,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1800,7 +1841,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/bunker.webp';
+      newImage.src = './assets/starcraftBuildings/terran/bunker.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1813,8 +1854,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1836,7 +1878,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.4;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/factory.webp';
+      newImage.src = './assets/starcraftBuildings/terran/factory.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1849,8 +1891,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1872,7 +1915,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.4;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/factoryMachineShop.webp';
+      newImage.src = './assets/starcraftBuildings/terran/factoryMachineShop.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1885,8 +1928,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1908,7 +1952,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/starport.webp';
+      newImage.src = './assets/starcraftBuildings/terran/starport.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1921,8 +1965,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1944,7 +1989,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3.2;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/starportControlTower.webp';
+      newImage.src = './assets/starcraftBuildings/terran/starportControlTower.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1957,8 +2002,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -1980,7 +2026,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/scienceFacility.webp';
+      newImage.src = './assets/starcraftBuildings/terran/scienceFacility.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -1993,8 +2039,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -2016,7 +2063,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/scienceFacilityCovertOps.webp';
+      newImage.src = './assets/starcraftBuildings/terran/scienceFacilityCovertOps.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -2029,8 +2076,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -2052,7 +2100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/scienceFacilityPhysicsLab.webp';
+      newImage.src = './assets/starcraftBuildings/terran/scienceFacilityPhysicsLab.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -2065,8 +2113,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
@@ -2088,7 +2137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageHeight = gridSize * 3;
 
       const newImage = document.createElement('img');
-      newImage.src = 'assets/starcraftBuildings/terran/armory.webp';
+      newImage.src = './assets/starcraftBuildings/terran/armory.webp';
       newImage.classList.add('map-image'); 
       newImage.style.position = 'absolute';
       newImage.style.width = `${imageWidth}px`;
@@ -2101,8 +2150,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       saveImgStack.push({
-        src: newImage.src,
+       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      saveImgStack.push({
+        src: src,
         left: newImage.style.left,
         top: newImage.style.top,
         width: newImage.style.width,
