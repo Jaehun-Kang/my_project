@@ -2266,6 +2266,12 @@ if (selection) {
   });
 }
 
+mapGrid.querySelectorAll('.map_grid--inside').forEach((gridInside, index) => {
+  gridInside.addEventListener('click', () => {
+    console.log(`Clicked gridInside index: ${index}`);
+    // 추가적인 작업을 수행할 수 있습니다.
+  });
+});
 
   // 이거 주석 해제하면 여러개 그리드 hover 작동하긴 하는데 렉이 많이 걸리네요 그래서 그냥 패스하겠습니다
   //   const gridForce = document.querySelectorAll('.map_grid--force');
