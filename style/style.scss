@@ -196,29 +196,30 @@ img {
     display: grid;
     grid-template-rows: 5rem 5rem 5rem;
     height: 100%;
+    width: 60px;
     row-gap: .5rem;
     font-size: .875rem;
     line-height: 1.125rem;
     text-align: center;
     align-items: center;
-
+    
     img {
-     width: 2.5rem;
-     height: 2.5rem;
-     object-fit: contain;
-     margin-inline: auto;
-   }
-
-    &--zerg {
-
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: contain;
+      margin-inline: auto;
     }
+    
+    &--selection {
+      box-sizing: border-box;
+      padding: 1.5px;
 
-    &--protoss {
-      
-    }
-
-    &--terran {
-      
+      &-selected {
+        border: 1.5px solid oklch(85.95% 0.3 143);
+        box-sizing: border-box;
+        padding: 0;
+        border-radius: 5px;
+      }
     }
   }
 
@@ -292,18 +293,6 @@ img {
         align-self: center;
         margin-block: auto;
       }
-    }
-    
-    &--zerg {
-      
-    }
-
-    &--protoss {
-      
-    }
-
-    &--terran {
-      
     }
 
     &--selection {

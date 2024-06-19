@@ -157,6 +157,7 @@ img {
   display: grid;
   grid-template-rows: 5rem 5rem 5rem;
   height: 100%;
+  width: 60px;
   row-gap: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.125rem;
@@ -169,6 +170,16 @@ img {
   -o-object-fit: contain;
      object-fit: contain;
   margin-inline: auto;
+}
+.underbar_race--selection {
+  box-sizing: border-box;
+  padding: 1.5px;
+}
+.underbar_race--selection-selected {
+  border: 1.5px solid oklch(85.95% 0.3 143);
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 5px;
 }
 .underbar_buildings {
   height: 100%;

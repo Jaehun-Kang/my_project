@@ -167,9 +167,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const selections = document.querySelectorAll('.underbar_buildings--selection');
+  const buildingSelections = document.querySelectorAll('.underbar_buildings--selection');
 
-  selections.forEach(selection => {
+  buildingSelections.forEach(selection => {
     selection.addEventListener('click', () => {
       if (selection.classList.contains('underbar_buildings--selection-selected')) {
         selection.classList.remove('underbar_buildings--selection-selected');
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
           gridInside.style.zIndex = 'auto';
         });
       } else {
-        selections.forEach(item => {
+        buildingSelections.forEach(item => {
           item.classList.remove('underbar_buildings--selection-selected');
         });
         selection.classList.add('underbar_buildings--selection-selected');
@@ -198,6 +198,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const raceSelections = document.querySelectorAll('.underbar_race--selection')
+
+  raceSelections.forEach(selection => {
+    selection.addEventListener('click', () => {
+      raceSelections.forEach(item => {
+        item.classList.remove('underbar_race--selection-selected');
+      });
+      selection.classList.add('underbar_race--selection-selected');
+    });
+  });
 
 
   const mapContainer = document.querySelector('.container_map');
@@ -337,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-      const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+    const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -374,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -411,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -448,7 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -485,7 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -522,7 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -559,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -596,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -633,7 +643,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -670,7 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -707,7 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -744,7 +754,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -781,7 +791,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -818,7 +828,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -855,7 +865,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -892,7 +902,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -929,7 +939,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -966,7 +976,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1003,7 +1013,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1040,7 +1050,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1077,7 +1087,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1114,7 +1124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1151,7 +1161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1188,7 +1198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1225,7 +1235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1262,7 +1272,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1299,7 +1309,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1336,7 +1346,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1373,7 +1383,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1410,7 +1420,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1447,7 +1457,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1484,7 +1494,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1521,7 +1531,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1558,7 +1568,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1595,7 +1605,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1632,7 +1642,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1669,7 +1679,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1706,7 +1716,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1743,7 +1753,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1780,7 +1790,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1817,7 +1827,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1854,7 +1864,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1891,7 +1901,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1928,7 +1938,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -1965,7 +1975,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -2002,7 +2012,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -2039,7 +2049,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -2076,7 +2086,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -2113,7 +2123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -2150,7 +2160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       imageStack.push(newImage);
 
-       const src = newImage.src.split(window.location.origin)[1]; // 상대 경로로 변환
+      const src = newImage.src.split(window.location.origin)[1];
       saveImgStack.push({
         src: src,
         left: newImage.style.left,
@@ -2259,22 +2269,22 @@ if (selection) {
 
   // 이거 주석 해제하면 여러개 그리드 hover 작동하긴 하는데 렉이 많이 걸리네요ㅋㅋ 그래서 그냥 패스하겠습니다
   //   const gridForce = document.querySelectorAll('.map_grid--force');
-  // const selections = document.querySelectorAll('.underbar_buildings--selection');
+  // const buildingSelections = document.querySelectorAll('.underbar_buildings--selection');
   // gridForce.forEach((forcedGrid, index) => {
   //   forcedGrid.addEventListener('mouseover', function () {
   //     const numCols = 128;
   //     const row = Math.floor(index / numCols);
   //     const col = index % numCols;
-  //     // if (selections.classList.contains('x6y3')) {
+  //     // if (buildingSelections.classList.contains('x6y3')) {
         
   //     // }
-  //     // if (selections.classList.contains('x4y3')) {
+  //     // if (buildingSelections.classList.contains('x4y3')) {
   //     // }
-  //     // if (selections.classList.contains('x4y2')) {
+  //     // if (buildingSelections.classList.contains('x4y2')) {
   //     // }
-  //     // if (selections.classList.contains('x3y2')) {
+  //     // if (buildingSelections.classList.contains('x3y2')) {
   //     // }
-  //     if (selections.classList.contains('x2y2')) {
+  //     if (buildingSelections.classList.contains('x2y2')) {
   //       if (forcedGrid.classList.contains('map_grid--inside')) {
   //         forcedGrid.classList.add('map_grid--force-green');
   //       }
