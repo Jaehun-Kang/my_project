@@ -63,6 +63,11 @@ img {
 
 .header {
   max-height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #000;
+
 
   .nav {
     display: grid;
