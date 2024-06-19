@@ -3,6 +3,7 @@
 // font-family: 'Eurostile', sans-serif;
 // font-family: 'EuroStyle', sans-serif;
 
+
 *,
 *::before,
 *::after {
@@ -87,7 +88,7 @@ img {
     &_menu {
       font-size: 1.125rem;
       display: grid;
-      grid-template-columns: 4fr min-content 0.2fr min-content 0.2fr min-content;
+      grid-template-columns: 3fr min-content .4fr min-content .4fr min-content .4fr min-content;
 
       &--btns {
         justify-self: right;
@@ -151,6 +152,14 @@ img {
         background-color: oklch(38.48% 0.155 28.2);
         transition: background-color 0ms;
       }
+    }
+
+    &--force-green {
+      background-color: oklch(67.33% 0.151 156.31);
+    }
+
+    &--force-red {
+      background-color: oklch(38.48% 0.155 28.2);
     }
 
     &::before {

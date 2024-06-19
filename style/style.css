@@ -71,7 +71,7 @@ img {
 .header .nav_menu {
   font-size: 1.125rem;
   display: grid;
-  grid-template-columns: 4fr min-content 0.2fr min-content 0.2fr min-content;
+  grid-template-columns: 3fr min-content 0.4fr min-content 0.4fr min-content 0.4fr min-content;
 }
 .header .nav_menu--btns {
   justify-self: right;
@@ -122,6 +122,12 @@ img {
 .map_grid--insideRed:hover {
   background-color: oklch(38.48% 0.155 28.2);
   transition: background-color 0ms;
+}
+.map_grid--force-green {
+  background-color: oklch(67.33% 0.151 156.31);
+}
+.map_grid--force-red {
+  background-color: oklch(38.48% 0.155 28.2);
 }
 .map_grid::before {
   content: "";
